@@ -1,0 +1,251 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    
+}
+nav{
+    width: 100%;
+    height: 30px;
+    background-color: blue;
+    display: flex;
+    justify-content:space-between;
+    padding: 5px 20px;
+    align-items: center;
+}
+nav h1 {
+    color: white;
+}
+.menu{
+    display: flex;
+    gap: 15px;
+}
+.menu a{
+color: white;
+    text-decoration: none;
+}
+.hero{
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #eaf2ff;
+}
+.hero h1{
+    font-size: 45px;
+    color: #1e3a8a;
+    margin-bottom: 30px;
+}
+.hero p{
+    font-size: 20px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.hero button{
+    padding: 12px 28px;
+    background-color: #1e3a8a;
+    color: #eaf2ff;
+    border:none;
+    font-size: 17px;
+
+}
+.hero button:hover{
+    background-color: aqua;
+}
+.hero img{
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+.about-school {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: white;
+}
+
+.about-school h2 {
+    font-size: 32px;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+.about-school p {
+    font-size: 18px;
+    color: #444;
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 1.6;
+}
+.features {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.features h2 {
+    font-size: 32px;
+    color: #1e3a8a;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    width: 250px;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #ddd;
+}
+
+.card h3 {
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #444;
+    line-height: 1.5;
+}
+.about-page {
+    text-align: center;
+    padding: 70px 20px;
+    background-color: #eaf2ff;
+}
+
+.about-page h1 {
+    color: #1e3a8a;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-page p {
+    color: #444;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: auto;
+}
+.about-page h2{
+    color: #1e3a8a;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+/*====================
+contact page css
+==================================================================*/
+.contact-page {
+    text-align: center;
+    padding: 70px 20px;
+    background-color: #eaf2ff;
+}
+
+.contact-page h1 {
+    color: #1e3a8a;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.contact-page p {
+    font-size: 18px;
+    color: #444;
+    margin: 15px 0;
+}
+/* =========================
+   CONTACT PAGE - FORM
+========================= */
+
+.contact-page form {
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.contact-page input,
+.contact-page textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.contact-page textarea {
+    height: 120px;
+}
+
+/* CONTACT PAGE - FORM */
+
+.contact-page form {
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.contact-page input,
+.contact-page textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.contact-page textarea {
+    height: 120px;
+}
+/* CONTACT PAGE - BUTTON */
+
+.contact-page button {
+    padding: 12px 25px;
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* FOOTER - सभी pages के लिए */
+
+footer {
+    text-align: center;
+    background-color: #1e3a8a;
+    color: white;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+/*==============================*/
+/* RESPONSIVE */
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu {
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+/* NAVBAR HOVER */
+.menu a:hover {
+    color: #ffd700;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    transition: color 0.3s;
+}
