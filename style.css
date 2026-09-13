@@ -1,62 +1,87 @@
-body{
-    margin: 0px;
-    padding: 0px;
-    
+/* BODY */
+body {
+    margin: 0;
+    padding: 0;
 }
-nav{
+
+/* NAVBAR */
+nav {
     width: 100%;
-    height: 30px;
+    min-height: 30px;
     background-color: blue;
     display: flex;
-    justify-content:space-between;
-    padding: 5px 20px;
+    justify-content: space-between;
+    padding: 10px 20px;
     align-items: center;
+    box-sizing: border-box;
 }
-nav h1 {
+
+nav h1,
+nav h2 {
     color: white;
+    margin: 0;
 }
-.menu{
+
+.menu {
     display: flex;
     gap: 15px;
 }
-.menu a{
-color: white;
+
+.menu a {
+    color: white;
     text-decoration: none;
+    font-size: 17px;
+    transition: color 0.3s;
 }
-.hero{
+
+.menu a:hover {
+    color: #ffd700;
+}
+
+/* HERO */
+.hero {
     text-align: center;
-    padding: 100px 20px;
+    padding: 80px 20px;
     background-color: #eaf2ff;
 }
-.hero h1{
-    font-size: 45px;
+
+.hero h1 {
+    font-size: 42px;
     color: #1e3a8a;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
-.hero p{
-    font-size: 20px;
+
+.hero p {
+    font-size: 18px;
     color: #333;
     line-height: 1.6;
     margin-bottom: 30px;
 }
-.hero button{
-    padding: 12px 28px;
-    background-color: #1e3a8a;
-    color: #eaf2ff;
-    border:none;
-    font-size: 17px;
 
-}
-.hero button:hover{
-    background-color: aqua;
-}
-.hero img{
+.hero img {
     width: 300px;
+    max-width: 90%;
     height: auto;
     display: block;
     margin: 30px auto;
     border-radius: 10px;
 }
+
+.hero button {
+    padding: 12px 28px;
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: aqua;
+}
+
+/* ABOUT SCHOOL */
 .about-school {
     text-align: center;
     padding: 60px 20px;
@@ -76,6 +101,8 @@ color: white;
     margin: 10px auto;
     line-height: 1.6;
 }
+
+/* FEATURES */
 .features {
     text-align: center;
     padding: 60px 20px;
@@ -99,6 +126,11 @@ color: white;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 10px #ddd;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
 }
 
 .card h3 {
@@ -110,6 +142,8 @@ color: white;
     color: #444;
     line-height: 1.5;
 }
+
+/* ABOUT PAGE */
 .about-page {
     text-align: center;
     padding: 70px 20px;
@@ -119,7 +153,6 @@ color: white;
 .about-page h1 {
     color: #1e3a8a;
     font-size: 36px;
-    margin-bottom: 20px;
 }
 
 .about-page p {
@@ -129,14 +162,13 @@ color: white;
     max-width: 700px;
     margin: auto;
 }
-.about-page h2{
+
+.about-page h2 {
     color: #1e3a8a;
     margin-top: 40px;
-    margin-bottom: 15px;
 }
-/*====================
-contact page css
-==================================================================*/
+
+/* CONTACT PAGE */
 .contact-page {
     text-align: center;
     padding: 70px 20px;
@@ -146,7 +178,6 @@ contact page css
 .contact-page h1 {
     color: #1e3a8a;
     font-size: 36px;
-    margin-bottom: 30px;
 }
 
 .contact-page p {
@@ -154,10 +185,8 @@ contact page css
     color: #444;
     margin: 15px 0;
 }
-/* =========================
-   CONTACT PAGE - FORM
-========================= */
 
+/* CONTACT FORM */
 .contact-page form {
     max-width: 500px;
     margin: 30px auto;
@@ -169,31 +198,12 @@ contact page css
     padding: 12px;
     margin: 10px 0;
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 .contact-page textarea {
     height: 120px;
 }
-
-/* CONTACT PAGE - FORM */
-
-.contact-page form {
-    max-width: 500px;
-    margin: 30px auto;
-}
-
-.contact-page input,
-.contact-page textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    font-size: 16px;
-}
-
-.contact-page textarea {
-    height: 120px;
-}
-/* CONTACT PAGE - BUTTON */
 
 .contact-page button {
     padding: 12px 25px;
@@ -203,8 +213,12 @@ contact page css
     border-radius: 5px;
     cursor: pointer;
 }
-/* FOOTER - सभी pages के लिए */
 
+.contact-page button:hover {
+    background-color: #162d6b;
+}
+
+/* FOOTER */
 footer {
     text-align: center;
     background-color: #1e3a8a;
@@ -215,24 +229,26 @@ footer {
 footer p {
     margin: 0;
 }
-/*==============================*/
-/* RESPONSIVE */
+
 /* MOBILE RESPONSIVE */
 @media (max-width: 600px) {
 
     nav {
         flex-direction: column;
-        padding: 15px;
         gap: 15px;
+        padding: 15px;
     }
 
+    nav h1,
     nav h2 {
         font-size: 22px;
+        text-align: center;
     }
 
     .menu {
-        display: flex;
-        gap: 20px;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .menu a {
@@ -251,25 +267,17 @@ footer p {
         font-size: 17px;
     }
 
-    .hero img {
-        width: 90% !important;
-        max-width: 300px;
-    }
-
     .cards {
         flex-direction: column;
         align-items: center;
     }
 
-}
+    .card {
+        width: 80%;
+        max-width: 300px;
+    }
 
-/* NAVBAR HOVER */
-.menu a:hover {
-    color: #ffd700;
-}
-.menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
-    transition: color 0.3s;
+    .contact-page form {
+        width: 90%;
+    }
 }
