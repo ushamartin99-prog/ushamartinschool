@@ -281,30 +281,35 @@ footer p {
         width: 90%;
     }
 }
-/* MOBILE RESPONSIVE */
+/* MOBILE NAVBAR */
 @media (max-width: 600px) {
 
     nav {
+        display: flex;
         flex-direction: column;
-        gap: 12px;
+        width: 100%;
         padding: 15px 10px;
+        gap: 15px;
+        box-sizing: border-box;
     }
 
     nav h2 {
+        margin: 0;
         font-size: 22px;
         text-align: center;
     }
 
     .menu {
-        width: 100%;
         display: flex;
         justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
         flex-wrap: wrap;
-        gap: 10px;
     }
 
     .menu a {
         font-size: 16px;
-        padding: 5px 8px;
+        white-space: nowrap;
     }
 }
