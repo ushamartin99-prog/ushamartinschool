@@ -281,3 +281,30 @@ footer p {
         width: 90%;
     }
 }
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        gap: 12px;
+        padding: 15px 10px;
+    }
+
+    nav h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .menu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .menu a {
+        font-size: 16px;
+        padding: 5px 8px;
+    }
+}
