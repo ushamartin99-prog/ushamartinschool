@@ -56,14 +56,12 @@ nav h2 {
 .hero h1 {
     font-size: 42px;
     color: #1e3a8a;
-    margin-bottom: 20px;
 }
 
 .hero p {
     font-size: 18px;
     color: #333;
     line-height: 1.6;
-    margin-bottom: 30px;
 }
 
 .hero img {
@@ -85,21 +83,15 @@ nav h2 {
     cursor: pointer;
 }
 
-.hero button:hover {
-    background-color: aqua;
-}
-
 /* ABOUT SCHOOL */
 .about-school {
     text-align: center;
     padding: 60px 20px;
-    background-color: white;
 }
 
 .about-school h2 {
     font-size: 32px;
     color: #1e3a8a;
-    margin-bottom: 20px;
 }
 
 .about-school p {
@@ -119,7 +111,6 @@ nav h2 {
 .features h2 {
     font-size: 32px;
     color: #1e3a8a;
-    margin-bottom: 40px;
 }
 
 .cards {
@@ -134,21 +125,10 @@ nav h2 {
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 10px #ddd;
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-8px);
 }
 
 .card h3 {
     color: #1e3a8a;
-    margin-bottom: 15px;
-}
-
-.card p {
-    color: #444;
-    line-height: 1.5;
 }
 
 /* ABOUT PAGE */
@@ -158,9 +138,9 @@ nav h2 {
     background-color: #eaf2ff;
 }
 
-.about-page h1 {
+.about-page h1,
+.about-page h2 {
     color: #1e3a8a;
-    font-size: 36px;
 }
 
 .about-page p {
@@ -169,11 +149,6 @@ nav h2 {
     line-height: 1.6;
     max-width: 700px;
     margin: auto;
-}
-
-.about-page h2 {
-    color: #1e3a8a;
-    margin-top: 40px;
 }
 
 /* CONTACT PAGE */
@@ -185,13 +160,11 @@ nav h2 {
 
 .contact-page h1 {
     color: #1e3a8a;
-    font-size: 36px;
 }
 
 .contact-page p {
     font-size: 18px;
     color: #444;
-    margin: 15px 0;
 }
 
 /* CONTACT FORM */
@@ -222,10 +195,6 @@ nav h2 {
     cursor: pointer;
 }
 
-.contact-page button:hover {
-    background-color: #162d6b;
-}
-
 /* FOOTER */
 footer {
     text-align: center;
@@ -238,13 +207,10 @@ footer p {
     margin: 0;
 }
 
-/* MOBILE RESPONSIVE */
+/* MOBILE */
 @media (max-width: 600px) {
 
     nav {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
         padding: 15px;
     }
 
@@ -260,13 +226,14 @@ footer p {
         display: none;
         position: absolute;
         top: 100%;
-        right: 10px;
+        right: 0;
         width: 180px;
         background-color: blue;
         flex-direction: column;
         padding: 15px;
         gap: 15px;
         z-index: 9999;
+        box-sizing: border-box;
     }
 
     .menu.show {
@@ -274,21 +241,8 @@ footer p {
     }
 
     .menu a {
-        font-size: 17px;
         text-align: center;
         padding: 5px;
-    }
-
-    .hero {
-        padding: 50px 15px;
-    }
-
-    .hero h1 {
-        font-size: 30px;
-    }
-
-    .hero p {
-        font-size: 17px;
     }
 
     .cards {
@@ -298,10 +252,5 @@ footer p {
 
     .card {
         width: 80%;
-        max-width: 300px;
-    }
-
-    .contact-page form {
-        width: 90%;
     }
 }
