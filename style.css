@@ -266,7 +266,7 @@ footer p {
         flex-direction: column;
         padding: 15px;
         gap: 15px;
-        z-index: 1000;
+        z-index: 9999;
     }
 
     .menu.show {
