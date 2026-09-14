@@ -7,16 +7,14 @@ body {
 /* NAVBAR */
 nav {
     width: 100%;
-    min-height: 30px;
     background-color: blue;
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
     align-items: center;
+    padding: 10px 20px;
     box-sizing: border-box;
 }
 
-nav h1,
 nav h2 {
     color: white;
     margin: 0;
@@ -31,11 +29,20 @@ nav h2 {
     color: white;
     text-decoration: none;
     font-size: 17px;
-    transition: color 0.3s;
 }
 
 .menu a:hover {
     color: #ffd700;
+}
+
+/* MENU BUTTON */
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
 }
 
 /* HERO */
@@ -48,14 +55,12 @@ nav h2 {
 .hero h1 {
     font-size: 42px;
     color: #1e3a8a;
-    margin-bottom: 20px;
 }
 
 .hero p {
     font-size: 18px;
     color: #333;
     line-height: 1.6;
-    margin-bottom: 30px;
 }
 
 .hero img {
@@ -77,21 +82,15 @@ nav h2 {
     cursor: pointer;
 }
 
-.hero button:hover {
-    background-color: aqua;
-}
-
 /* ABOUT SCHOOL */
 .about-school {
     text-align: center;
     padding: 60px 20px;
-    background-color: white;
 }
 
 .about-school h2 {
     font-size: 32px;
     color: #1e3a8a;
-    margin-bottom: 20px;
 }
 
 .about-school p {
@@ -111,7 +110,6 @@ nav h2 {
 .features h2 {
     font-size: 32px;
     color: #1e3a8a;
-    margin-bottom: 40px;
 }
 
 .cards {
@@ -126,21 +124,10 @@ nav h2 {
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 10px #ddd;
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-8px);
 }
 
 .card h3 {
     color: #1e3a8a;
-    margin-bottom: 15px;
-}
-
-.card p {
-    color: #444;
-    line-height: 1.5;
 }
 
 /* ABOUT PAGE */
@@ -150,9 +137,9 @@ nav h2 {
     background-color: #eaf2ff;
 }
 
-.about-page h1 {
+.about-page h1,
+.about-page h2 {
     color: #1e3a8a;
-    font-size: 36px;
 }
 
 .about-page p {
@@ -161,11 +148,6 @@ nav h2 {
     line-height: 1.6;
     max-width: 700px;
     margin: auto;
-}
-
-.about-page h2 {
-    color: #1e3a8a;
-    margin-top: 40px;
 }
 
 /* CONTACT PAGE */
@@ -177,13 +159,11 @@ nav h2 {
 
 .contact-page h1 {
     color: #1e3a8a;
-    font-size: 36px;
 }
 
 .contact-page p {
     font-size: 18px;
     color: #444;
-    margin: 15px 0;
 }
 
 /* CONTACT FORM */
@@ -214,10 +194,6 @@ nav h2 {
     cursor: pointer;
 }
 
-.contact-page button:hover {
-    background-color: #162d6b;
-}
-
 /* FOOTER */
 footer {
     text-align: center;
@@ -230,47 +206,41 @@ footer p {
     margin: 0;
 }
 
-/* MOBILE RESPONSIVE */
+/* MOBILE NAVBAR */
 @media (max-width: 600px) {
 
     nav {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 12px;
-        padding: 15px 10px;
+        flex-direction: row;
+        padding: 15px;
     }
 
     nav h2 {
-        font-size: 22px;
-        text-align: center;
+        font-size: 20px;
+    }
+
+    .menu-btn {
+        display: block;
     }
 
     .menu {
-        width: 100%;
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 180px;
+        background-color: blue;
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .menu.show {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 10px;
     }
 
     .menu a {
-        font-size: 16px;
-        padding: 5px 8px;
-        white-space: nowrap;
-    }
-
-    .hero {
-        padding: 50px 15px;
-    }
-
-    .hero h1 {
-        font-size: 30px;
-    }
-
-    .hero p {
         font-size: 17px;
+        text-align: center;
     }
 
     .cards {
@@ -280,10 +250,5 @@ footer p {
 
     .card {
         width: 80%;
-        max-width: 300px;
-    }
-
-    .contact-page form {
-        width: 90%;
     }
 }
