@@ -235,24 +235,25 @@ footer p {
 
     nav {
         flex-direction: column;
+        padding: 15px 10px;
         gap: 15px;
-        padding: 15px;
     }
 
-    nav h1,
     nav h2 {
         font-size: 22px;
         text-align: center;
     }
 
     .menu {
-        gap: 15px;
-        flex-wrap: wrap;
+        width: 100%;
         justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
     }
 
     .menu a {
         font-size: 16px;
+        white-space: nowrap;
     }
 
     .hero {
@@ -279,37 +280,5 @@ footer p {
 
     .contact-page form {
         width: 90%;
-    }
-}
-/* MOBILE NAVBAR */
-@media (max-width: 600px) {
-
-    nav {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 15px 10px;
-        gap: 15px;
-        box-sizing: border-box;
-    }
-
-    nav h2 {
-        margin: 0;
-        font-size: 22px;
-        text-align: center;
-    }
-
-    .menu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        width: 100%;
-        flex-wrap: wrap;
-    }
-
-    .menu a {
-        font-size: 16px;
-        white-space: nowrap;
     }
 }
